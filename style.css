@@ -81,13 +81,12 @@ img#home{
 		flex-direction: column;
 		height: calc(100vh - 100px);
 		margin: 15px;
-		margin-top: 150px;
 		margin-bottom: 100px;
           }
 
      #texto{
 		font-family: "Montserrat";
-		width: 400px;
+		width: 300px;
 	     }
 
 	 .musica{
@@ -125,12 +124,21 @@ img#home{
 		flex-direction: column;
 	}
 
+.card{
+	
+	font-size: 15px;
+	width: 300px;
+}
+
+.card-text{
+	height: 200px;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+
+}
 	.a{
 		padding: 20px;
-	}
-
-	.card-text{
-		height: 300px;
 	}
 }
 
@@ -165,16 +173,18 @@ img#home{
 }
 
 .card{
-	margin-inline: 20px;
+	margin-inline: 10px;
 	margin-bottom: 40px;
 	font-size: 15px;
+	width: 300px;
 }
 
 .card-text{
-	height: 250px;
+	height: 200px;
 	display: flex;
 	align-items: center;
 	text-align: justify;
+
 }
 
 .sub{
