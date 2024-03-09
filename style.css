@@ -1,4 +1,4 @@
-body{
+ body{
 	background-color: #EDE8E8;
 	overflow-y: hidden;
 }
@@ -44,8 +44,6 @@ hr{
 	margin-top: 0;
 	width: 98%;
 	height: 3px;
-	margin: 0 auto;
-
 }
 
 #body{
@@ -59,7 +57,7 @@ hr{
 }
 
 img#home{
-	width: 400px;
+	width: 25vw;
 	padding: 15px;
 }
 
@@ -73,20 +71,33 @@ img#home{
 }
 
 /*celulares*/
-@media (min-width: 320px) and (max-width:1024px){
+@media (max-width:480px){
      #body{
           display: flex;
           align-items: center;
 		justify-content: center;
 		flex-direction: column;
 		height: calc(100vh - 100px);
-		margin: 15px;
-		margin-bottom: 100px;
+		margin-bottom: 15vh;
+          }
+
+          .t{
+          	display: flex;
+          	justify-content: center;
+          	align-items: center;
+          }
+
+          img{
+          	width: 90vw !important;
+          }
+
+          .group{
+          	margin-bottom: 10px;
           }
 
      #texto{
 		font-family: "Montserrat";
-		width: 300px;
+		width: 90vw !important;
 	     }
 
 	 .musica{
@@ -94,7 +105,7 @@ img#home{
 	 	flex-direction: column;
 	 	flex-wrap: wrap;
 
-	 	width: 400px;
+	 	width: 95%;
 
 	 	column-count: 1;
 
@@ -106,6 +117,11 @@ img#home{
 	 	justify-content: center;
 	 	flex-direction: column;
 	 	margin-bottom: 50px;
+
+	 }
+
+	 #home{
+	 	width: 20vw;
 	 }
 
 	 .manchetes{
@@ -115,32 +131,214 @@ img#home{
 	 	width: 400px;
 	 }
 
-	 hr{
-	margin-bottom: 40px;
-	}
-
-	.cards .coluna{
+	
+	.cards{
 		margin: 0 auto !important;
 		flex-direction: column;
 	}
 
-.card{
-	
-	font-size: 15px;
-	width: 300px;
-}
+	.card{
+		
+		font-size: 15px;
+		width: 90vw !important;
+	}
 
-.card-text{
-	height: 200px;
+	.card-text{
+		width: 85vw !important;
 	display: flex;
 	align-items: center;
 	text-align: justify;
 
-}
+	}
+
+	.card-body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
 	.a{
 		padding: 20px;
 	}
-}
+}/*responsividade*/
+
+
+/*médios*/
+@media (max-width:767px){
+     #body{
+          display: flex;
+          align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: calc(100vh - 100px);
+          }
+
+          img{
+          	width: 90vw !important;
+          }
+
+          .t{
+          	display: flex;
+          	justify-content: center;
+          	align-items: center;
+          }
+
+     #texto{
+		font-family: "Montserrat";
+		width: 90vw !important;
+	     }
+
+	 .musica{
+	 	display: flex;
+	 	flex-direction: column;
+	 	flex-wrap: wrap;
+
+	 	width: 95%;
+
+	 	column-count: 1;
+
+	 	margin: 0 auto !important;
+	 }
+
+	 .body{
+	 	display: flex;
+	 	justify-content: center;
+	 	flex-direction: column;
+	 	margin-bottom: 50px;
+
+	 }
+
+	 #home{
+	 	width: 20vw;
+	 }
+
+	 .manchetes{
+	 	margin: 0 auto !important;
+	 	text-align: center;
+	 	margin-bottom: 15px;
+	 	width: 400px;
+	 }
+
+	
+	.cards{
+		margin: 0 auto !important;
+		flex-direction: column;
+	}
+
+	.card{
+		
+		font-size: 15px;
+		width: 90vw !important;
+	}
+
+	.card-text{
+		width: 85vw !important;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+
+	}
+
+	.card-body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.a{
+		padding: 20px;
+	}
+}/*responsividade*/
+
+/*celulares*/
+@media (max-width:1024px){
+     #body{
+          display: flex;
+          align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		height: calc(100vh - 100px);
+          }
+
+          img{
+          	width: 90vw !important;
+          }
+
+     #texto{
+		font-family: "Montserrat";
+		width: 90vw !important;
+	     }
+
+	 .musica{
+	 	display: flex;
+	 	flex-direction: column;
+	 	flex-wrap: wrap;
+
+	 	width: 95%;
+
+	 	column-count: 1;
+
+	 	margin: 0 auto !important;
+	 }
+
+	 .body{
+	 	display: flex;
+	 	justify-content: center;
+	 	flex-direction: column;
+	 	margin-bottom: 50px;
+
+	 }
+
+	 #home{
+	 	width: 20vw;
+	 }
+
+	 .manchetes{
+	 	margin: 0 auto !important;
+	 	text-align: center;
+	 	margin-bottom: 15px;
+	 	width: 400px;
+	 }
+
+	
+	.cards{
+		margin: 0 auto !important;
+		flex-direction: column;
+		display: flex !important;
+		align-items: center !important;
+		justify-content: center !important;
+	}
+
+.t{
+          	display: flex;
+          	justify-content: center;
+          	align-items: center;
+          }
+
+	.card{
+		
+		font-size: 15px;
+		width: 90vw !important;
+	}
+
+	.card-text{
+		width: 85vw !important;
+	display: flex;
+	align-items: center;
+	text-align: justify;
+
+	}
+
+	.card-body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.a{
+		padding: 20px;
+	}
+} /*responsividade*/
 
 .musica{
 	text-align: justify;
@@ -176,16 +374,24 @@ img#home{
 	margin-inline: 10px;
 	margin-bottom: 40px;
 	font-size: 15px;
-	width: 300px;
+	width: 395px;
 }
 
 .card-text{
-	height: 200px;
+	width: 360px;
 	display: flex;
 	align-items: center;
+	justify-content: center;
 	text-align: justify;
+	height: 200px;
 
 }
+
+.card-body{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 
 .sub{
 	font-family: "Oranienbaum", serif;
