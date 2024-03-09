@@ -70,6 +70,37 @@ img#home{
 	text-align: justify;
 }
 
+@media (max-height:700px){
+	.group{
+		margin-bottom: 170px !important;
+	}
+}
+
+@media (min-height:720px) and (max-height:740px){
+	.group{
+		margin-bottom: 130px !important;
+	}
+}
+
+
+@media (max-height:800px){
+	.gg{
+		margin-bottom: 140px !important;
+	}
+}
+
+@media (max-height:900px){
+	.gg{
+		margin-bottom: 70px !important;
+	}
+}
+
+@media (max-height:1000px){
+	.gg{
+		margin-bottom: 40px !important;
+	}
+}
+
 /*celulares*/
 @media (max-width:480px){
      #body{
@@ -113,8 +144,9 @@ img#home{
 	 }
 
 	 .body{
-	 	display: flex;
-	 	justify-content: center;
+	 	display: flex !important;
+	 	justify-content: center !important;
+	 	align-items: center!important;
 	 	flex-direction: column;
 	 	margin-bottom: 50px;
 
